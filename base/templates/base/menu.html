@@ -4,9 +4,8 @@
 {% include 'sidebar.html' %}
 
 <!-- large screen -->
-<div class="col-lg-10 offset-lg-2 col-md-9 offset-md-3 col-10 offset-2 d-none d-sm-block" >
-  
-    <div class="col-lg-6 offset-lg-3 justify-content-between d-none d-sm-block card-body " style="margin-top: 3.8rem; padding-top:2rem;">
+<div class="col-lg-10 offset-lg-2 col-md-9 offset-md-3 col-10 offset-1" >
+    <div class="col-lg-6 offset-lg-3 col-12justify-content-between card-body " style="margin-top: 3.8rem; padding-top:2rem;">
         <div class="d-flex flex-column form-control" style="padding-top:2rem;">
             <div class="col-8 offset-2 avatar avatar--large active d-flex align-items-center flex-column ">
                 <img src="{{request.user.avatar.url}}" alt="">
@@ -32,7 +31,7 @@
   
 </div>
 <!-- mobile -->
-<div class="d-block d-sm-none col-12">
+<!-- <div class="d-block d-sm-none col-12">
     <div class="d-flex flex-column" style="margin-top:2rem; padding-top:2rem;">
         <div class="d-flex mt-3 ms-3 fs-5" >
             <div><a href="{{request.META.HTTP_REFERER}}"><i class="fa-solid fa-arrow-left text-muted"></i></a></div>
@@ -62,7 +61,7 @@
             <a class="text-danger" href="{% url 'logout' %}"> <i class="fa-solid fa-right-from-bracket pe-2"></i> logout</a>
         </div>
     </div>
-</div>
+</div> -->
 
 {% include 'footer.html' %}
 {% include 'footer-navbar.html' %}
